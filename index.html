@@ -16,24 +16,25 @@
 <body>
     <!-- Header start -->
     <!-- Used semantic elements (header, nav) -->
-    <header>
-            
+
+    <div class="navbar">
         <div class="logobox"> 
             <img class="img"src="./assets/images/ontama_logo_tl_c.png" alt="Logo" /> 
             <p class="text">Especialistas en Mantenimiento Industrial</p> 
         </div>
-        
-        <nav>
-            <ul>
-                <li>
-                    <a class="list" href="#servicios">Servicios</a>
-                </li>
-                <li>
-                    <a class="list" href="#contacto">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <div class="cont">
+            <a class="list" href="#contacto">Contacto</a>
+            <div class="subnav">
+                <button class="subnavbtn">Servicios <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="#servicios">Asistencia completa</a>
+                    <a href="#servicios">Capacitaciones</a>
+                    <a href="#servicios">Pólizas anuales</a>
+                    <a href="#servicios">Asesoría de ingeniera</a>
+                </div>
+            </div> 
+        </div>
+    </div>
     <!-- Header end -->
 
     <!-- This creates the background image -->

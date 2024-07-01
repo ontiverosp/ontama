@@ -40,7 +40,7 @@ footer h2 {
 
 
 header {
-    padding: 20px;
+    padding: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #ffffff;
     color: var(--accent);
@@ -58,19 +58,22 @@ header h1 {
 }
 
 .logobox{
-    width: 200px;
+    max-width: 215px;
     float: left;
+    margin: 20PX;
+    order: 3;
 }
 
 .img{
-    max-width: 200px;
+    width: 100%;
 }
 
 .text{
     text-align: center;
     font-size: x-small;
     font-weight: bold;
-    color: var(--fill);
+    color: var(--accent);
+    width: 215px;
 }
 
 /* changed element to match changes done to html (nav) */
@@ -82,14 +85,7 @@ header nav {
     font-size: 20px;
 }
 
-header nav ul {
-    list-style-type: none;
-}
 
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
 
 .hero {
     height: 100%;
@@ -200,3 +196,85 @@ header nav ul li {
 .fa-envelope-o {
     font-weight: bold;
 }
+
+.navbar {
+    overflow: visible;
+    background-color:white;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: self-end;
+    border-bottom: 2px solid var(--accent);
+    justify-content: space-between;
+  }
+
+.cont {
+    order: 1;
+}
+  
+.navbar a {
+    float: right;
+    font-size: 22px;
+    color: var(--accent);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 2px solid var(--accent);
+    margin-left: -2px;
+    margin-bottom: -2px;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+.subnav {
+    float: right;
+    overflow: hidden;
+    margin-bottom: -2px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 22px;  
+    outline: none;
+    color: var(--accent);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border: 2px solid var(--accent);
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: var(--accent);
+    color: white;
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: var(--accent);
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: right;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0px;
+    margin: 2px;
+  }
+  
+  .subnav-content a:hover {
+    background-color: white;
+    color: var(--accent);
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
