@@ -1,5 +1,5 @@
 :root {
-    --accent: #1d5fc9c8;
+    --accent: #1f45ad;
     --fill: #ffffffc8;
   } 
 
@@ -15,7 +15,7 @@
 
 /* Moved element above class (a) */
 a {
-    color: var(--accent);
+    color: #2f64c1;
     text-decoration: none;
 }
 
@@ -192,3 +192,11 @@ header nav ul li {
     margin-top: 130px;
 } 
 
+.fa-whatsapp {
+    color: #18a021;
+    font-weight: bolder;
+}
+
+.fa-envelope-o {
+    font-weight: bold;
+}
