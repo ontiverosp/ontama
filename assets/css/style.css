@@ -1,17 +1,21 @@
-  * {
+:root {
+    --accent: #1d5fc9c8;
+    --fill: #ffffffc8;
+  } 
+
+
+
+ 
+ * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
  
-/* body {
-    background-color: #d9dcd6;
-} */
-
 
 /* Moved element above class (a) */
 a {
-    color: #298fde;
+    color: var(--accent);
     text-decoration: none;
 }
 
@@ -34,15 +38,17 @@ footer h2 {
     color:#1b1b1b;
 }
 
+
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #ffffff;
-    color: #298fde;
+    color: var(--accent);
     position: fixed;
     width: 100%;
     /* Added overflow property so navigation links don't go down into the image at reduced window space */
     overflow: hidden;
+    border-bottom: 2px solid var(--accent);
 
 }
 
@@ -51,7 +57,21 @@ header h1 {
     font-size: 48px;
 }
 
+.logobox{
+    width: 200px;
+    float: left;
+}
 
+.img{
+    max-width: 200px;
+}
+
+.text{
+    text-align: center;
+    font-size: x-small;
+    font-weight: bold;
+    color: var(--fill);
+}
 
 /* changed element to match changes done to html (nav) */
 header nav {
@@ -99,10 +119,10 @@ header nav ul li {
     width: 20%;
     height: 91%;
     border-radius: 25px;
-    border: 2px solid #298fde;
+    border: 2px solid var(--accent);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* Made background a smidge darker to improve font contrast */
-    background-color: #ffffff;
+    background-color: var(--fill);
     /* Added overlfow property for a scroll bar if box becomes too narrow*/
     overflow: auto;
 }
@@ -110,7 +130,7 @@ header nav ul li {
 /* Combined classes with same property values */
 .benefit{
     margin-bottom: 10px;
-    color: #298fde;
+    color: var(--accent);
 }
 
 /* Combined classes with same property values */
@@ -143,10 +163,10 @@ header nav ul li {
     /* Changed height to percentage so the box will increase if the viewport is reduced */
     height: 300px;
     border-radius: 25px;
-    border: 2px solid #298fde;
+    border: 2px solid var(--accent);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #ffffff;
-    color: #298fde;
+    background-color: var(--fill);
+    color: var(--accent);
     overflow: hidden;
 }
 
@@ -171,3 +191,4 @@ header nav ul li {
 .content{
     margin-top: 130px;
 } 
+
