@@ -1,0 +1,293 @@
+:root {
+    --accent: #1f45ad;
+    --fill: #ffffffc8;
+  } 
+
+
+
+ 
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ 
+
+/* Moved element above class (a) */
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+/* Moved element above class (p) */
+p {
+    font-size: 16px;
+}
+
+/* Moved element above class (p) */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* Moved element above class (p) */
+footer h2 {
+    font-size: 20px;
+    color:#1b1b1b;
+}
+
+
+header {
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ffffff;
+    color: var(--accent);
+    position: fixed;
+    width: 100%;
+    /* Added overflow property so navigation links don't go down into the image at reduced window space */
+    overflow: hidden;
+    border-bottom: 2px solid var(--accent);
+
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.logobox{
+    max-width: 215px;
+    float: left;
+    margin: 20PX;
+    order: 3;
+}
+
+.img{
+    width: 100%;
+}
+
+.text{
+    text-align: center;
+    font-size: x-small;
+    font-weight: bold;
+    color: var(--accent);
+    width: 215px;
+}
+
+/* changed element to match changes done to html (nav) */
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+
+.hero {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/IMG-20240617-WA0005.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.benefits {
+    /* Changed margin to percentage so content and benefits can display correctly in a smaller window */
+    margin-right: 2%;
+    padding: 5px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 91%;
+    border-radius: 25px;
+    border: 2px solid var(--accent);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Made background a smidge darker to improve font contrast */
+    background-color: var(--fill);
+    /* Added overlfow property for a scroll bar if box becomes too narrow*/
+    overflow: auto;
+}
+
+/* Combined classes with same property values */
+.benefit{
+    margin-bottom: 10px;
+    color: var(--accent);
+}
+
+/* Combined classes with same property values */
+.benefit h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Combined classes with same property values */
+.benefit img{
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+ /* moved so its above the classes inside of it in the html */
+.content {
+    width: 74%;
+    display: inline-block;
+
+/* Changed margin to percentage so content and benefits can display correctly in a smaller window */
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 100%;
+}
+.content2 {
+    width: 96%;
+    display: inline-block;
+
+/* Changed margin to percentage so content and benefits can display correctly in a smaller window */
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 100%;
+}
+
+/* Combined classes with same property values */
+.services{
+    /* Changed height to percentage so that the three boxes and two margins in between them take up 100% of space as evenly as possible */
+    margin-bottom: 20px;
+    padding: 50px;
+    /* Changed height to percentage so the box will increase if the viewport is reduced */
+    height: 100%;
+    border-radius: 25px;
+    border: 2px solid var(--accent);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--fill);
+    color: var(--accent);
+    overflow: hidden;
+}
+
+/* Combined classes with same property values */
+.services img {
+    max-height: 200px;
+}
+
+/* Combined classes with same property values */
+.services h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
+.hero{
+    position: fixed;
+    z-index: -1;
+}
+
+.benefits,
+.content,
+.content2{
+    margin-top: 130px;
+} 
+
+.fa-whatsapp {
+    color: #18a021;
+    font-weight: bolder;
+}
+
+.fa-envelope-o {
+    font-weight: bold;
+}
+
+.navbar {
+    overflow: visible;
+    background-color:white;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: self-end;
+    border-bottom: 2px solid var(--accent);
+    justify-content: space-between;
+  }
+
+.cont {
+    order: 1;
+}
+  
+.navbar .list {
+    float: right;
+    font-size: 22px;
+    color: var(--accent);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 2px solid var(--accent);
+    margin-left: -2px;
+    margin-bottom: -2px;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+.subnav {
+    float: right;
+    overflow: hidden;
+    margin-bottom: -2px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 22px;  
+    outline: none;
+    color: var(--accent);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border: 2px solid var(--accent);
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .navbar .list:hover, .subnav:hover .subnavbtn {
+    background-color: var(--accent);
+    color: white;
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: var(--accent);
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: right;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0px;
+    margin: 2px;
+    margin-top: 0;
+    padding: 14px 16px;
+  }
+  
+  .subnav-content a:hover {
+    background-color: white;
+    color: var(--accent);
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
